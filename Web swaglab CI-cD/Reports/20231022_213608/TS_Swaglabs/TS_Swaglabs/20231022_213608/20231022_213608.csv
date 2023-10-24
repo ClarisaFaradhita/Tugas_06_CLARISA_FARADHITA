@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Swaglabs,Firefox 113.0,,,2023-10-22 21:36:58,2023-10-22 21:42:10,"5m - 11,999s",PASSED
+,,,,,,,
+Test Cases/Positive_Case_Login/TC01_Login,Firefox 113.0,,,2023-10-22 21:36:59,2023-10-22 21:40:21,"3m - 21,963s",PASSED
+"openBrowser(""https://www.saucedemo.com/"")",Firefox 113.0,,,2023-10-22 21:37:00,2023-10-22 21:37:53,"53,409s",PASSED
+"setText(findTestObject(""Login/Username""), ""standard_user"")",Firefox 113.0,,,2023-10-22 21:37:53,2023-10-22 21:38:57,"1m - 4,267s",PASSED
+"setText(findTestObject(""Login/Password""), ""secret_sauce"")",Firefox 113.0,,,2023-10-22 21:38:57,2023-10-22 21:39:42,"44,491s",PASSED
+"click(findTestObject(""Login/Login""))",Firefox 113.0,,,2023-10-22 21:39:42,2023-10-22 21:40:21,"38,615s",PASSED
+,,,,,,,
+Test Cases/Positive_Case_Add_To_Card/TC02_Add_To_Card,Firefox 113.0,,,2023-10-22 21:40:21,2023-10-22 21:41:06,"45,624s",PASSED
+"callTestCase(findTestCase(""Positive_Case_Login/TC01_Login""), [:], STOP_ON_FAILURE)",Firefox 113.0,,,2023-10-22 21:40:21,2023-10-22 21:41:03,"41,522s",PASSED
+"click(findTestObject(""Add_TO_Card/Btn_Add_To_Card""))",Firefox 113.0,,,2023-10-22 21:41:03,2023-10-22 21:41:06,"3,269s",PASSED
+,,,,,,,
+Test Cases/Positive_Case_Check_Out/TC03_Positive_Check_Out,Firefox 113.0,,,2023-10-22 21:41:06,2023-10-22 21:41:38,"31,428s",PASSED
+"callTestCase(findTestCase(""Positive_Case_Add_To_Card/TC02_Add_To_Card""), [:], STOP_ON_FAILURE)",Firefox 113.0,,,2023-10-22 21:41:07,2023-10-22 21:41:31,"24,429s",PASSED
+"click(findTestObject(""Check_Out/Btn_Keranjang""))",Firefox 113.0,,,2023-10-22 21:41:31,2023-10-22 21:41:32,"0,711s",PASSED
+"click(findTestObject(""Check_Out/Btn_Check_Out""))",Firefox 113.0,,,2023-10-22 21:41:32,2023-10-22 21:41:33,"0,687s",PASSED
+"setText(findTestObject(""Check_Out/First Name""), ""Clarisa"")",Firefox 113.0,,,2023-10-22 21:41:33,2023-10-22 21:41:34,"0,899s",PASSED
+"setText(findTestObject(""Check_Out/Last Name""), ""Faradhita"")",Firefox 113.0,,,2023-10-22 21:41:34,2023-10-22 21:41:35,"0,811s",PASSED
+"setText(findTestObject(""Check_Out/Zip Code""), ""0098"")",Firefox 113.0,,,2023-10-22 21:41:35,2023-10-22 21:41:35,"0,843s",PASSED
+"click(findTestObject(""Check_Out/Btn Continue""))",Firefox 113.0,,,2023-10-22 21:41:35,2023-10-22 21:41:36,"0,732s",PASSED
+"click(findTestObject(""Check_Out/Btn_Finish""))",Firefox 113.0,,,2023-10-22 21:41:36,2023-10-22 21:41:37,"0,648s",PASSED
+"click(findTestObject(""Check_Out/Btn_Back Home""))",Firefox 113.0,,,2023-10-22 21:41:37,2023-10-22 21:41:38,"0,897s",PASSED
+,,,,,,,
+Test Cases/Positive_Case_Logout/TC04_Logout,Firefox 113.0,,,2023-10-22 21:41:38,2023-10-22 21:42:10,"32,005s",PASSED
+"callTestCase(findTestCase(""Positive_Case_Login/TC01_Login""), [:], STOP_ON_FAILURE)",Firefox 113.0,,,2023-10-22 21:41:39,2023-10-22 21:42:06,"26,876s",PASSED
+"click(findTestObject(""Logout/Btn_Add To Card""))",Firefox 113.0,,,2023-10-22 21:42:06,2023-10-22 21:42:07,"1,010s",PASSED
+"click(findTestObject(""Logout/Btn_Keranjang""))",Firefox 113.0,,,2023-10-22 21:42:07,2023-10-22 21:42:07,"0,705s",PASSED
+"click(findTestObject(""Logout/Btn_Continue Shopping""))",Firefox 113.0,,,2023-10-22 21:42:07,2023-10-22 21:42:08,"0,800s",PASSED
+"click(findTestObject(""Logout/Btn_Trigram""))",Firefox 113.0,,,2023-10-22 21:42:08,2023-10-22 21:42:09,"0,769s",PASSED
+"click(findTestObject(""Logout/Btn_Logout""))",Firefox 113.0,,,2023-10-22 21:42:09,2023-10-22 21:42:10,"0,747s",PASSED
